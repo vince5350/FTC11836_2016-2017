@@ -8,9 +8,11 @@ import com.qualcomm.robotcore.util.Range;
 public class competitionCode extends OpMode {
     public competitionCode(){/*Nothing needs to be put here*/} 
 
-    //Variables to be initiated outside of a class go here
-    //If they are initiated inside of a class that's private,
-    //only that class can use it
+    /*
+    Variables to be initiated outside of a class go here
+    If they are initiated inside of a class that's private,
+    only that class can use it 
+    */
 
     //Booleans / Floats / Ints
     double position1;
