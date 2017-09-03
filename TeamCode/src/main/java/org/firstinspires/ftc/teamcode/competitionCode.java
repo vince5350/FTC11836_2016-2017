@@ -52,7 +52,7 @@ public class competitionCode extends OpMode {
         lTrigger = Range.clip(lTrigger, 0, 1);
         rTrigger = Range.clip(rTrigger, 0, 1);
 
-            //Set #1 of 18/36
+            //Set #1 of 18/36 
         if(!slow) {
             robot.leftWheel.setPower(lStickX - rTrigger + lTrigger);
             robot.rightWheel.setPower(-lStickX - rTrigger + lTrigger);
@@ -100,7 +100,7 @@ public class competitionCode extends OpMode {
             robot.flipper.setPower(0);
         }
 
-        //Hook
+        //Hook (Prevents robot lift from accidently releasing early)
         boolean hookRelease;
         hookRelease = gamepad1.right_stick_button;
         hooked = false;
@@ -113,7 +113,7 @@ public class competitionCode extends OpMode {
             hooked = false;
         }
 
-        //Lift
+        //Robot lift
         boolean up;
         boolean down;
         up = gamepad1.dpad_up;
@@ -129,7 +129,7 @@ public class competitionCode extends OpMode {
             robot.lift.setPower(0);
         }
 
-        //EMERGENCY EXIT
+        //EMERGENCY EXIT (Only active with debugging)
         boolean y;
         y = gamepad1.y;
         if (y && (debugMode = true)) {
@@ -138,10 +138,10 @@ public class competitionCode extends OpMode {
             requestOpModeStop(); //Stops the code due to driver pressing button
         }
     }
-//--------------------------------------------------------------------------------------------------
-    //Nothing should be put in here; this tells the compiler
-    // that it’s safe to exit as all previous code was
-    // successfully executed.
+
+    /*Nothing should be put in here; this tells the compiler
+     that it’s safe to exit as all previous code was
+     successfully executed. */
     public void stop(){
     }
 
