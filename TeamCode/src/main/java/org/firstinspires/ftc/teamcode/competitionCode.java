@@ -6,7 +6,7 @@ import com.qualcomm.robotcore.util.Range;
 
 @TeleOp(name="Competition Driver Period")
 public class competitionCode extends OpMode {
-    public competitionCode(){} //Nothing needs to be put here
+    public competitionCode(){/*Nothing needs to be put here*/} 
 
     //Variables to be initiated outside of a class go here
     //If they are initiated inside of a class that's private,
